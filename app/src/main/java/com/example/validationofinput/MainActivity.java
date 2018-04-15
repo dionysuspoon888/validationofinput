@@ -154,4 +154,25 @@ public class MainActivity extends AppCompatActivity {
         tv_result.setText(tmp.substring(0,tmp.length()-1));
 
     }
+//
+//    fpwd1/
+//    Please enter the phone number you used to sign up for XXX. We will send you as SMS with
+//    information on how to reset youur password.
+//            Area code
+//    Phone #
+//    SUBMIT
+//===
+//    fpwd2/
+//    A 6-digit verification code has been sent to
+//    Please enter the verification code
+//    uDMj 6-digit verification code
+//    Didn't receive the verification code? Send again
+//    SUBMIT
+//===
+//    fpwd3/
+//    New Password
+//8-20  alphanumerical characters consisting at least 1 uppercase,lowercase letter and a digit
+//    Confirm New Password
+//            SUBMIT
+
 }

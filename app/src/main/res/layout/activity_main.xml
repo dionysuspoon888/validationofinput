@@ -8,13 +8,6 @@
     android:orientation="vertical"
     tools:context="com.example.validationofinput.MainActivity">
 
-    <EditText
-        android:id="@+id/et_phone"
-        android:hint="phone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:maxLength="11"/>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -26,6 +19,15 @@
             android:entries="@array/safequestion1">
 
         </Spinner>
+    <EditText
+        android:id="@+id/et_phone"
+        android:hint="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="11"/>
+    </LinearLayout>
+
  <EditText
      android:id="@+id/et_pass"
      android:hint="password"
@@ -33,7 +35,7 @@
      android:layout_height="wrap_content"
      android:inputType="textPassword"
      android:maxLength="20"/>
-</LinearLayout>
+
     <TextView
 
         android:textStyle="bold"

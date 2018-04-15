@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+<TextView
+    android:text="請輸入用作登記XXX之手機號碼, 密碼提示將以"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"/>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:text="短訊傳送給你 !"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/sp_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/safequestion1">
+
+            </Spinner>
+            <EditText
+                android:id="@+id/et_pass"
+                android:hint="password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="20"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+
+        android:layout_alignParentBottom="true"
+        android:text="提交"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="safequestion1" >
+
+    <item >(+852)</item>
+    <item >(+853)</item>
+    <item>(+86)</item>
+    </string-array>
+
+    </resources>

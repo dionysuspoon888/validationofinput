@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.validationofinput.MainActivity">
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:hint="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="11"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/sp_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/safequestion1">
+
+        </Spinner>
+ <EditText
+     android:id="@+id/et_pass"
+     android:hint="password"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:inputType="textPassword"
+     android:maxLength="20"/>
+</LinearLayout>
+    <TextView
+
+        android:textStyle="bold"
+        android:text="8至20個字元,包含至少一個大寫字母, 小寫字母及數字"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:maxLength="60"
+        />
+
+    <EditText
+        android:id="@+id/et_test"
+        android:layout_marginTop="30dp"
+        android:hint="test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+       />
+
+
+  <TextView
+      android:id="@+id/tv_result"
+      android:layout_marginTop="30dp"
+      android:text="Result:"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/b_checkingForPassword"
+        android:text="CheckingPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/b_checkingForEmail"
+        android:text="CheckingEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/b_test"
+        android:text="Teset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
